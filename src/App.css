@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0077b6;
+}
+
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.add-user-form {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.add-user-form input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.add-user-form button {
+  padding: 0.5rem 1rem;
+  background-color: #2ecc71;
+  border: none;
+  color: black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-user-form button:hover {
+  background-color: #27ae60;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+}
+
+.user-card {
+  list-style: none;
+  background-color: #90e0ef;
+  padding: 1rem;
+  width: 300px;
+  border: 1px solid #03045e;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.user-info h3 {
+  margin: 0;
+  color: black;
+}
+
+.user-info p {
+  margin: 0.3rem 0 0.8rem;
+  color: black;
+}
+
+.delete-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 2rem auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
